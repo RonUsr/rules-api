@@ -1,0 +1,191 @@
+Index: Version 1.5/soaint-soadoc-process-enterprise/rules-api/src/main/resources/com/soadoc/rules_api/RulesExpirationsDocument.dmn
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Version 1.5/soaint-soadoc-process-enterprise/rules-api/src/main/resources/com/soadoc/rules_api/RulesExpirationsDocument.dmn b/Version 1.5/soaint-soadoc-process-enterprise/rules-api/src/main/resources/com/soadoc/rules_api/RulesExpirationsDocument.dmn
+--- a/Version 1.5/soaint-soadoc-process-enterprise/rules-api/src/main/resources/com/soadoc/rules_api/RulesExpirationsDocument.dmn	(revision 5eb4ad853e1bb0e39f80ed3a6ee618bacaa33288)
++++ b/Version 1.5/soaint-soadoc-process-enterprise/rules-api/src/main/resources/com/soadoc/rules_api/RulesExpirationsDocument.dmn	(date 1636465388740)
+@@ -185,6 +185,19 @@
+ }</dmn:text>
+         </dmn:outputEntry>
+       </dmn:rule>
++      <dmn:rule id="_41092EF8-68D6-46FA-9653-BC8BC3DAF698">
++        <dmn:inputEntry id="_8DBE6557-FC04-416E-BBE5-A75B2CFB93AF">
++          <dmn:text>"Facturas"</dmn:text>
++        </dmn:inputEntry>
++        <dmn:outputEntry id="_AE259844-A924-453D-A1B1-F28F26A80746">
++          <dmn:text>{
++	"quantity": "7",
++	"typeDocument": "Factura",
++	"unitTime": "Horas",
++ "enable": "false"
++}</dmn:text>
++        </dmn:outputEntry>
++      </dmn:rule>
+       <dmn:rule id="_B08595F7-671E-4ED1-93A3-5A448AA352A3">
+         <dmn:inputEntry id="_636294FE-4CF0-4430-900B-A42B5DAEF941">
+           <dmn:text>"Memorando"</dmn:text>
+@@ -198,6 +211,149 @@
+ }</dmn:text>
+         </dmn:outputEntry>
+       </dmn:rule>
++      <dmn:rule id="_6E878211-CB3F-4229-85CA-63DCAE7A663B">
++        <dmn:inputEntry id="_53210CBA-0753-4E09-A2D4-1EB4657143F3">
++          <dmn:text>"Contratos"</dmn:text>
++        </dmn:inputEntry>
++        <dmn:outputEntry id="_8202A11B-D686-4968-A397-471DCA174D79">
++          <dmn:text>{
++	"quantity": "7",
++	"typeDocument": "Contratos",
++	"unitTime": "Horas",
++ "enable": "false"
++}</dmn:text>
++        </dmn:outputEntry>
++      </dmn:rule>
++      <dmn:rule id="_E5BF6D88-A9AB-4E27-A89A-0CDDA79A83A4">
++        <dmn:inputEntry id="_50F75320-033B-45D8-9E8F-47080937C808">
++          <dmn:text>"Petición de información"</dmn:text>
++        </dmn:inputEntry>
++        <dmn:outputEntry id="_AA81D6BC-B72A-4E90-ADAB-05B370F6BF92">
++          <dmn:text>{
++	"quantity": "10",
++	"typeDocument": "PQRSD",
++	"unitTime": "Dias",
++ "enable": "false"
++}</dmn:text>
++        </dmn:outputEntry>
++      </dmn:rule>
++      <dmn:rule id="_67043983-4BEA-45B2-894A-3D81EF2467D9">
++        <dmn:inputEntry id="_B31FEF95-F49F-494B-A5BC-DB52E498504F">
++          <dmn:text>"Petición de interés general"</dmn:text>
++        </dmn:inputEntry>
++        <dmn:outputEntry id="_0E58B3B2-56B6-481F-A1F7-A7C6EEF670EE">
++          <dmn:text>{
++	"quantity": "15",
++	"typeDocument": "PQRSD",
++	"unitTime": "Dias",
++ "enable": "false"
++}</dmn:text>
++        </dmn:outputEntry>
++      </dmn:rule>
++      <dmn:rule id="_A20565F4-A1C6-4DCB-A6D8-8FD397443432">
++        <dmn:inputEntry id="_B91D64B5-BB78-4004-B9B4-6C8D08395CA7">
++          <dmn:text>"Petición de interés particular"</dmn:text>
++        </dmn:inputEntry>
++        <dmn:outputEntry id="_213079F6-C443-4147-A9AA-6CCF03498BC9">
++          <dmn:text>{
++	"quantity": "15",
++	"typeDocument": "PQRSD",
++	"unitTime": "Dias",
++ "enable": "false"
++}</dmn:text>
++        </dmn:outputEntry>
++      </dmn:rule>
++      <dmn:rule id="_9D100BCC-B471-49AA-B7B2-7B5D8CA6769B">
++        <dmn:inputEntry id="_5CB06AA8-3A17-4C5D-8208-3CBFAC6FCA48">
++          <dmn:text>"Petición tipo consulta"</dmn:text>
++        </dmn:inputEntry>
++        <dmn:outputEntry id="_EBA707E4-81B7-46A2-AB4C-D6D7246F4DFA">
++          <dmn:text>{
++	"quantity": "30",
++	"typeDocument": "PQRSD",
++	"unitTime": "Dias",
++ "enable": "false"
++}</dmn:text>
++        </dmn:outputEntry>
++      </dmn:rule>
++      <dmn:rule id="_20DEC799-660A-4F4D-A72A-34D9857077DB">
++        <dmn:inputEntry id="_56C1BD0C-11D9-446E-AA01-774C0EEC5EA5">
++          <dmn:text>"Petición de habeas data reclamo"</dmn:text>
++        </dmn:inputEntry>
++        <dmn:outputEntry id="_42457448-4F15-4490-9FFA-13063A16D286">
++          <dmn:text>{
++	"quantity": "10",
++	"typeDocument": "PQRSD",
++	"unitTime": "Dias",
++ "enable": "false"
++}</dmn:text>
++        </dmn:outputEntry>
++      </dmn:rule>
++      <dmn:rule id="_A698104F-DB3C-459A-8075-CBFD04F3D1D2">
++        <dmn:inputEntry id="_1DFA970E-91BF-42AD-87D7-373BE6B931BD">
++          <dmn:text>"Petición de unidad autoridad administrativa"</dmn:text>
++        </dmn:inputEntry>
++        <dmn:outputEntry id="_5C9F406D-1761-45E1-A7B2-6ACAF9E2F510">
++          <dmn:text>{
++	"quantity": "15",
++	"typeDocument": "PQRSD",
++	"unitTime": "Dias",
++ "enable": "false"
++}</dmn:text>
++        </dmn:outputEntry>
++      </dmn:rule>
++      <dmn:rule id="_5D05C7DC-6ED3-4E18-B77F-D33CB27A254B">
++        <dmn:inputEntry id="_38D7E003-C14B-4A8D-9097-19444C098EAE">
++          <dmn:text>"Queja"</dmn:text>
++        </dmn:inputEntry>
++        <dmn:outputEntry id="_832EBBF3-4BA5-4951-BC84-2EC49656F0AD">
++          <dmn:text>{
++	"quantity": "15",
++	"typeDocument": "PQRSD",
++	"unitTime": "Dias",
++ "enable": "false"
++}</dmn:text>
++        </dmn:outputEntry>
++      </dmn:rule>
++      <dmn:rule id="_2883375D-949C-4B88-BA38-C957198D551A">
++        <dmn:inputEntry id="_07753850-CAC4-4EC5-8568-8E7138CC652E">
++          <dmn:text>"Reclamo"</dmn:text>
++        </dmn:inputEntry>
++        <dmn:outputEntry id="_3004DBB4-F518-49A5-AFEA-CDFFFCB6D5B8">
++          <dmn:text>{
++	"quantity": "15",
++	"typeDocument": "PQRSD",
++	"unitTime": "Dias",
++ "enable": "false"
++}</dmn:text>
++        </dmn:outputEntry>
++      </dmn:rule>
++      <dmn:rule id="_C6BFBEB6-93CC-488E-8282-1C9F4B57E247">
++        <dmn:inputEntry id="_8A9BDBAC-374D-4157-AB8F-BE01379F8E0B">
++          <dmn:text>"Sugerencia u opinión"</dmn:text>
++        </dmn:inputEntry>
++        <dmn:outputEntry id="_93EC84B5-15D8-4388-A0D5-4D2F620C0B35">
++          <dmn:text>{
++	"quantity": "15",
++	"typeDocument": "PQRSD",
++	"unitTime": "Dias",
++ "enable": "false"
++}</dmn:text>
++        </dmn:outputEntry>
++      </dmn:rule>
++      <dmn:rule id="_DC41E5B2-DA5C-4110-8937-428633282D98">
++        <dmn:inputEntry id="_82D12873-F9D4-415E-9BD4-6221E8F538B5">
++          <dmn:text>"Denuncia"</dmn:text>
++        </dmn:inputEntry>
++        <dmn:outputEntry id="_174F90BB-F25D-4325-8052-2E9265CA49DF">
++          <dmn:text>{
++	"quantity": "15",
++	"typeDocument": "PQRSD",
++	"unitTime": "Dias",
++ "enable": "false"
++}</dmn:text>
++        </dmn:outputEntry>
++      </dmn:rule>
+     </dmn:decisionTable>
+   </dmn:decision>
+   <dmn:inputData id="_ECE4D6CE-8CA7-4FF9-8233-6921B32B5663" name="documentType">
+@@ -210,9 +366,9 @@
+         <kie:ComponentsWidthsExtension>
+           <kie:ComponentWidths dmnElementRef="_EE1988B9-7C6B-414C-B728-C34E94FC5B3F">
+             <kie:width>50.0</kie:width>
+-            <kie:width>216.0</kie:width>
+-            <kie:width>417.0</kie:width>
+-            <kie:width>119.0</kie:width>
++            <kie:width>337.0</kie:width>
++            <kie:width>481.0</kie:width>
++            <kie:width>438.0</kie:width>
+           </kie:ComponentWidths>
+         </kie:ComponentsWidthsExtension>
+       </di:extension>
